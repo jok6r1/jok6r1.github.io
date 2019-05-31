@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--   <link rel="stylesheet" href="css/stat_site.css" type="text/css"/>
+         <script src="js/stat_site.js"></script>      -->
+  <title>UrbanStatic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--ширина-на все устройство, int-scale:масштабирование-->
+ <style>
+    
+.all-block{
+	position: relative;
+	height:480px;
+	    
+}
+.main-block{
+	position: absolute;
+        top: 101%;
+        left: 50%;
+        margin-right: -500%;
+        transform: translate(-50%, -50%) ;
+		border:1px solid;
+}
+
+
+.main-center-block{
+	width:320px;
+	height:auto;
+	float:left;
+	display:inline-block;
+	 background: white;
+	     box-sizing: border-box;
+		 display:block;
+	
+}
+
+.center-block{ 
+    width:auto;
+    height:60em;
+	color:#222222;
+    border-radius:10px;
+	}
+
+.block2{
+	padding-top: 1.2em;
+    padding-bottom: 1.5em;
+	padding-left:60px;
+	font-size:24px;
+	background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+}
+
+.assessment{
+	width:300px;
+	height:400px;
+	margin:0px;
+	padding:0px;
+}
+
+.kriterii{
+	border:1px solid;
+	width:308px;
+	height:340px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-left:5px;
+
+}
+
+.inf1{
+	height:auto;
+	width:auto;
+}
+.inf2{
+	width:auto;
+	height:auto;
+	
+}
+
+
+.block-inf{
+	margin-top:5px;
+	margin-left:15px;
+	width:auto;
+	height:40px;
+}
+
+.fill-inf{
+	float:left;
+	display:inline;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	margin-left:5px;
+	width:auto;
+	height:auto;
+	font-size:14px;
+}
+
+.vvod{
+	margin:0;
+	margin-left:2px;
+	padding:2px;
+}
+
+.vihod{
+	margin:0;
+	margin-left:2px;
+	padding:2px;
+}
+
+.but2{
+	margin-top:20px;
+	padding:5px;
+	background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+    padding: 3px 7px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+ </style>
+  </head>
+  
+ 
+  <body>
+  <div class="all-block">
+ <div class="main-block">
+
+<div class="main-center-block" >
+ <div class="center-block">  
+ 
+ <div class="block2"><span>ОЦЕНКА ДВОРА</span></div>
+ <div class="assessment">
+  
+  <div class="block-inf">
+    <p class="fill-inf">Адрес:
+    <input type="text" id="myinput1" ></p>
+	
+   </div>
+   
+  <div class="block-inf">
+  
+  <form>
+    <p class="fill-inf">Личная оценка:</p>
+	<p class="fill-inf">1<input type="radio" id="1" name='radio'/></p>
+	<p class="fill-inf">2<input type="radio" id="2" name='radio'/></p>
+	<p class="fill-inf">3<input type="radio" id="3" name='radio'/></p>
+	<p class="fill-inf">4<input type="radio" id="4" name='radio'/></p>
+	<p class="fill-inf">5<input type="radio" id="5" name='radio'/></p>
+  </form>
+   </div>
+<div class="block-inf"><span>Критерии:</span></div>
+
+<div class="kriterii">
+
+    <div class="block-inf" style="padding-top:10px">
+      <p class="fill-inf">Мусор на детской площадке</p> 
+	  
+	<div style="border:1px solid; width:30px;margin-left:180px;"> <a id="switch" href="#" style=" text-decoration: none;padding-left:4px;">Да</a></div>
+	</div>
+	
+
+	 <div class="block-inf">
+      <p class="fill-inf">Бычки под балконами
+    <input type="radio"  value="" id="myinput4" class="vvod"></p>
+	
+	</div>
+	
+	 <div class="block-inf">
+      <p class="fill-inf">Мусор на детской площадке
+    <input type="radio"  value="" id="myinput5" class="vvod"></p>
+	
+	</div>
+	
+	 <div class="block-inf">
+      <p class="fill-inf">Переполненные мусорные баки
+    <input type="radio"  value="" id="myinput6"  class="vvod"></p>
+	
+	</div>
+	
+	<div class="block-inf">
+      <p class="fill-inf">Выгул собак в неположенном месте
+    <input type="radio"  value="" id="myinput7" class="vvod"></p>
+	
+	</div>
+	
+	<div class="block-inf">
+      <p class="fill-inf">Наличие урн во дворе
+    <input type="radio"  value="" id="myinput8"  class="vvod"></p>
+	
+	</div>
+	
+	<div class="block-inf">
+      <p class="fill-inf">Дом, прилегающий к общественному месту
+    <input type="radio"  value="" id="myinput9" class="vvod"></p>
+	
+	</div>
+	
+  </div>
+  
+  <div class="block-inf">
+    <input type="button" value="Отправить результат" class="but2"> 
+	
+	</div>
+
+<script>
+//дожидаемся полной загрузки страницы
+window.onload = function () {
+
+    //получаем идентификатор элемента
+    var a = document.getElementById('switch');
+    
+    //вешаем на него событие
+    a.onclick = function() {
+        //производим какие-то действия
+        if (this.innerHTML=='Да') this.innerHTML = 'Нет';
+        else this.innerHTML = 'Да';
+        //предотвращаем переход по ссылке href
+        return false;
+    }
+}
+</script>
+
+</div>
+</div>
+</div>
+</div>
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
